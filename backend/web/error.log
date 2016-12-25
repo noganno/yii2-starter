@@ -1,0 +1,353 @@
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP Fatal error:  Class 'COM' not found in D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\trntv\probe\src\provider\WindowsProvider.php on line 276
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP Stack trace:
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\yii2-starter-kit.dev\backend\web\index.php:0
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\yii2-starter-kit.dev\backend\web\index.php:23
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\Application.php:375
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\web\Application.php:84
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\Module.php:455
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   8. backend\controllers\SystemInformationController->actionIndex() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP   9. yii\base\Controller->render() D:\server\OpenServer\domains\yii2-starter-kit.dev\backend\controllers\SystemInformationController.php:35
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP  10. yii\base\View->render() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\Controller.php:371
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP  11. yii\base\View->renderFile() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\View.php:149
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP  12. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\View.php:247
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP  13. require() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\yiisoft\yii2\base\View.php:325
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP  14. probe\provider\WindowsProvider->getCpuModel() D:\server\OpenServer\domains\yii2-starter-kit.dev\backend\views\system-information\index.php:27
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP  15. probe\provider\WindowsProvider->getCpuInfo() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\trntv\probe\src\provider\WindowsProvider.php:152
+[24-Dec-2015 08:30:10 Europe/Moscow] PHP  16. probe\provider\WindowsProvider->getWMI() D:\server\OpenServer\domains\yii2-starter-kit.dev\vendor\trntv\probe\src\provider\WindowsProvider.php:175
+[08-Feb-2016 09:31:59 Europe/Moscow] An Error occurred while handling another error:
+exception 'yii\base\InvalidConfigException' with message 'Connection::dsn cannot be empty.' in D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\Connection.php:523
+Stack trace:
+#0 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\Connection.php(796): yii\db\Connection->getSlavePdo()
+#3 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\Connection.php(680): yii\db\Connection->getDriverName()
+#4 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\ActiveRecord.php(294): yii\db\Connection->getSchema()
+#5 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\ActiveRecord.php(317): yii\db\ActiveRecord::getTableSchema()
+#6 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\ActiveRecord.php(176): yii\db\ActiveRecord::primaryKey()
+#7 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveRecord::findByCondition(1)
+#8 D:\server\OpenServer\domains\today.dev\common\models\User.php(136): yii\db\BaseActiveRecord::findOne(1)
+#9 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\User.php(614): common\models\User::findIdentity(1)
+#10 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\User.php(176): yii\web\User->renewAuthStatus()
+#11 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\User.php(346): yii\web\User->getIdentity()
+#12 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#13 D:\server\OpenServer\domains\today.dev\backend\controllers\SiteController.php(26): yii\base\Component->__get('isGuest')
+#14 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php(149): backend\controllers\SiteController->beforeAction(Object(yii\web\ErrorAction))
+#15 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('error', Array)
+#16 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#17 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\base\InvalidConfigException))
+#18 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#19 {main}
+Previous exception:
+exception 'yii\base\InvalidConfigException' with message 'The "to" option must be set for EmailTarget::message.' in D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\log\EmailTarget.php:68
+Stack trace:
+#0 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Object.php(107): yii\log\EmailTarget->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#3 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\log\\EmailTa...', Array, Array)
+#4 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\log\\EmailTa...', Array, Array)
+#5 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\log\Dispatcher.php(101): yii\BaseYii::createObject(Array)
+#6 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Object.php(107): yii\log\Dispatcher->init()
+#7 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\log\Dispatcher.php(89): yii\base\Object->__construct(Array)
+#8 [internal function]: yii\log\Dispatcher->__construct(Array)
+#9 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#10 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\log\\Dispatc...', Array, Array)
+#11 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\log\\Dispatc...', Array, Array)
+#12 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#13 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php(302): yii\di\ServiceLocator->get('log')
+#14 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php(63): yii\base\Application->bootstrap()
+#15 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#16 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#17 D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#18 D:\server\OpenServer\domains\today.dev\backend\web\index.php(23): yii\base\Application->__construct(Array)
+#19 {main}
+$_SERVER = [
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'backend.today.dev',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_ACCEPT' => 'text/html',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.103 Safari/537.36',
+    'HTTP_DNT' => '1',
+    'HTTP_REFERER' => 'http://backend.today.dev/article/index',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4',
+    'HTTP_COOKIE' => '_csrf=59f0437d56218fd3e8014ebb27c3d6081df40283469f3b0be8f35d4304e02a13a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ApTlNE3bJAH64dXXkNHDbr7P5d61Iiug%22%3B%7D; PHPSESSID=6b97b6vn73npado3bf47kspq50; _identity=a5ef04993da4af24f5dfade63bf827b1abf939fb1efbd061dc6dfa3c3df37f85a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22W3XErThYlpu55SPiS8bVpYpFB-28Zb50%22%2C2592000%5D%22%3B%7D',
+    'PATH' => 'd:\\server\\openserver\\modules\\php\\PHP-5.5\\ext;d:\\server\\openserver\\modules\\php\\PHP-5.5\\pear;d:\\server\\openserver\\modules\\php\\PHP-5.5\\pear\\bin;d:\\server\\openserver\\modules\\php\\PHP-5.5;d:\\server\\openserver\\modules\\imagemagick;d:\\server\\openserver\\modules\\wget\\bin;d:\\server\\openserver\\modules\\git;d:\\server\\openserver\\modules\\git\\bin;d:\\server\\openserver\\modules\\git\\mingw\\bin;d:\\server\\openserver\\modules\\git\\cmd;d:\\server\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\server\\openserver\\modules\\memcached\\Memcached-1.2;d:\\server\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\server\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Git\\cmd;D:\\server\\OpenServer\\modules\\php\\PHP-5.5;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\OpenVPN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\User\\AppData\\Roaming\\npm',
+    'SystemRoot' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32)',
+    'SERVER_NAME' => 'backend.today.dev',
+    'SERVER_ADDR' => '127.0.0.1',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'DOCUMENT_ROOT' => 'D:/server/OpenServer/domains/today.dev/backend/web',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/server/OpenServer/domains/today.dev/backend/web',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => 'D:/server/OpenServer/domains/today.dev/backend/web/index.php',
+    'REMOTE_PORT' => '33942',
+    'REDIRECT_QUERY_STRING' => 'tag=56b8365cd13da',
+    'REDIRECT_URL' => '/debug/default/toolbar',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'tag=56b8365cd13da',
+    'REQUEST_URI' => '/debug/default/toolbar?tag=56b8365cd13da',
+    'SCRIPT_NAME' => '/index.php',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1454913118.7449999,
+    'REQUEST_TIME' => 1454913118,
+    'argv' => [
+        'tag=56b8365cd13da',
+    ],
+    'argc' => 1,
+    'GLIDE_SIGN_KEY' => '<2FaGrt_91syoRcjGvZZcDcKqar4ticvKF234>',
+    'GLIDE_MAX_IMAGE_SIZE' => '4000000',
+]
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\log\Logger.php on line 147
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP Stack trace:
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   8. backend\controllers\ArticleController->actionIndex() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP   9. yii\base\Controller->render() D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php:44
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  10. yii\base\View->render() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:371
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  11. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  12. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  13. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  14. yii\base\Widget::widget() D:\server\OpenServer\domains\today.dev\backend\views\article\index.php:63
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  15. yii\grid\GridView->run() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Widget.php:98
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  16. yii\widgets\BaseListView->run() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\GridView.php:288
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  17. preg_replace_callback() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\widgets\BaseListView.php:129
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  18. yii\widgets\BaseListView->yii\widgets\{closure}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\widgets\BaseListView.php:129
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  19. yii\grid\GridView->renderSection() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\widgets\BaseListView.php:126
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  20. yii\widgets\BaseListView->renderSection() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\GridView.php:313
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  21. yii\grid\GridView->renderItems() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\widgets\BaseListView.php:151
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  22. yii\grid\GridView->renderTableBody() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\GridView.php:344
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  23. yii\grid\GridView->renderTableRow() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\GridView.php:473
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  24. yii\grid\Column->renderDataCell() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\GridView.php:504
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  25. yii\grid\DataColumn->renderDataCellContent() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\Column.php:108
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  26. yii\grid\DataColumn->getDataCellValue() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\DataColumn.php:204
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  27. call_user_func:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\DataColumn.php:190}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\DataColumn.php:190
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  28. yii\base\View->{closure:D:\server\OpenServer\domains\today.dev\backend\views\article\index.php:41-43}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\DataColumn.php:190
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  29. yii\db\BaseActiveRecord->__get() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\grid\DataColumn.php:42
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  30. yii\db\ActiveQuery->findFor() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\BaseActiveRecord.php:249
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  31. yii\db\ActiveQuery->one() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:157
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  32. yii\db\Query->one() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\ActiveQuery.php:300
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  33. yii\db\Command->queryOne() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\Query.php:243
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  34. yii\db\Command->queryInternal() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\Command.php:373
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  35. yii\BaseYii::endProfile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\db\Command.php:849
+[08-Feb-2016 10:44:58 Europe/Moscow] PHP  36. yii\log\Logger->log() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\BaseYii.php:458
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP Fatal error:  Class 'mihaildev\ckeditor\CKEditor' not found in D:\server\OpenServer\domains\today.dev\backend\views\article\_form.php on line 34
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP Stack trace:
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   8. backend\controllers\ArticleController->actionUpdate() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP   9. yii\base\Controller->render() D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php:82
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP  10. yii\base\View->render() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:371
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP  11. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP  12. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP  13. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP  14. yii\base\View->render() D:\server\OpenServer\domains\today.dev\backend\views\article\update.php:19
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP  15. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP  16. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 04:45:29 Europe/Moscow] PHP  17. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP Fatal error:  Class 'mihaildev\ckeditor\CKEditor' not found in D:\server\OpenServer\domains\today.dev\backend\views\article\_form.php on line 34
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP Stack trace:
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   8. backend\controllers\ArticleController->actionUpdate() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP   9. yii\base\Controller->render() D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php:82
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP  10. yii\base\View->render() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:371
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP  11. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP  12. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP  13. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP  14. yii\base\View->render() D:\server\OpenServer\domains\today.dev\backend\views\article\update.php:19
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP  15. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP  16. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 04:45:49 Europe/Moscow] PHP  17. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP Fatal error:  Class 'mihaildev\ckeditor\CKEditor' not found in D:\server\OpenServer\domains\today.dev\backend\views\article\_form.php on line 34
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP Stack trace:
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   8. backend\controllers\ArticleController->actionUpdate() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP   9. yii\base\Controller->render() D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php:82
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP  10. yii\base\View->render() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:371
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP  11. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP  12. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP  13. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP  14. yii\base\View->render() D:\server\OpenServer\domains\today.dev\backend\views\article\update.php:19
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP  15. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP  16. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 04:47:48 Europe/Moscow] PHP  17. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP Fatal error:  Class 'mihaildev\ckeditor\CKEditor' not found in D:\server\OpenServer\domains\today.dev\backend\views\article\_form.php on line 33
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP Stack trace:
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   8. backend\controllers\ArticleController->actionUpdate() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP   9. yii\base\Controller->render() D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php:82
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP  10. yii\base\View->render() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:371
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP  11. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP  12. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP  13. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP  14. yii\base\View->render() D:\server\OpenServer\domains\today.dev\backend\views\article\update.php:19
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP  15. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP  16. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 05:02:25 Europe/Moscow] PHP  17. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP Fatal error:  Class 'mihaildev\ckeditor\CKEditor' not found in D:\server\OpenServer\domains\today.dev\backend\views\article\_form.php on line 33
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP Stack trace:
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   8. backend\controllers\ArticleController->actionUpdate() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP   9. yii\base\Controller->render() D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php:82
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP  10. yii\base\View->render() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:371
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP  11. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP  12. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP  13. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP  14. yii\base\View->render() D:\server\OpenServer\domains\today.dev\backend\views\article\update.php:19
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP  15. yii\base\View->renderFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:149
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP  16. yii\base\View->renderPhpFile() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:247
+[01-Mar-2016 05:03:39 Europe/Moscow] PHP  17. require() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\View.php:325
+[06-Mar-2016 07:53:13 Europe/Moscow] PHP Warning:  require_once(D:\server\OpenServer\domains\today.dev\backend\web/../class/Facebook/autoload.php): failed to open stream: No such file or directory in D:\server\OpenServer\domains\today.dev\backend\web\login.php on line 5
+[06-Mar-2016 07:53:13 Europe/Moscow] PHP Stack trace:
+[06-Mar-2016 07:53:13 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\login.php:0
+[06-Mar-2016 07:53:13 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required 'D:\server\OpenServer\domains\today.dev\backend\web/../class/Facebook/autoload.php' (include_path='.;d:/server/openserver/modules/php/PHP-5.5;d:/server/openserver/modules/php/PHP-5.5/PEAR/pear') in D:\server\OpenServer\domains\today.dev\backend\web\login.php on line 5
+[06-Mar-2016 07:53:13 Europe/Moscow] PHP Stack trace:
+[06-Mar-2016 07:53:13 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\login.php:0
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP Fatal error:  Class 'backend\controllers\Query' not found in D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php on line 130
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP Stack trace:
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[30-Jun-2016 16:06:54 Europe/Moscow] PHP   8. backend\controllers\ArticleController->actionCreate() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'oreAction' (T_STRING), expecting function (T_FUNCTION) in D:\server\OpenServer\domains\today.dev\backend\controllers\PushController.php on line 9
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP Stack trace:
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   5. yii\base\Module->createController() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:449
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   6. yii\base\Module->createControllerByID() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:521
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   7. class_exists() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:563
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   8. spl_autoload_call() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:563
+[21-Jul-2016 10:02:04 Europe/Moscow] PHP   9. yii\BaseYii::autoload() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:563
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP Fatal error:  Class 'backend\controllers\Yii' not found in D:\server\OpenServer\domains\today.dev\backend\controllers\PushController.php on line 34
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP Stack trace:
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[21-Jul-2016 10:11:25 Europe/Moscow] PHP   8. backend\controllers\PushController->actionSend() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP Fatal error:  Call to undefined method Yii::app() in D:\server\OpenServer\domains\today.dev\backend\controllers\PushController.php on line 35
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP Stack trace:
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[21-Jul-2016 10:11:45 Europe/Moscow] PHP   8. backend\controllers\PushController->actionSend() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP Fatal error:  Call to undefined method Yii::app() in D:\server\OpenServer\domains\today.dev\backend\controllers\PushController.php on line 35
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP Stack trace:
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP   6. yii\base\InlineAction->runWithParams() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:151
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP   7. call_user_func_array:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[21-Jul-2016 10:11:57 Europe/Moscow] PHP   8. backend\controllers\PushController->actionSend() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\InlineAction.php:55
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP Fatal error:  Class 'sjaakp\taggable\TaggableBehavior' not found in D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php on line 28
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP Stack trace:
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   6. yii\base\Module->beforeAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:139
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   7. yii\base\Component->trigger() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:607
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   8. call_user_func:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP   9. common\behaviors\GlobalAccessBehavior->beforeAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP  10. yii\base\Component->attachBehavior() D:\server\OpenServer\domains\today.dev\common\behaviors\GlobalAccessBehavior.php:58
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP  11. yii\base\Component->ensureBehaviors() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:590
+[27-Oct-2016 07:57:44 Europe/Moscow] PHP  12. backend\controllers\ArticleController->behaviors() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:646
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP Fatal error:  Class 'sjaakp\taggable\TaggableBehavior' not found in D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php on line 28
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP Stack trace:
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   6. yii\base\Module->beforeAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:139
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   7. yii\base\Component->trigger() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:607
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   8. call_user_func:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP   9. common\behaviors\GlobalAccessBehavior->beforeAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP  10. yii\base\Component->attachBehavior() D:\server\OpenServer\domains\today.dev\common\behaviors\GlobalAccessBehavior.php:58
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP  11. yii\base\Component->ensureBehaviors() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:590
+[27-Oct-2016 07:59:56 Europe/Moscow] PHP  12. backend\controllers\ArticleController->behaviors() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:646
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP Fatal error:  Class 'backend\controllers\Tag' not found in D:\server\OpenServer\domains\today.dev\backend\controllers\ArticleController.php on line 29
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP Stack trace:
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   6. yii\base\Module->beforeAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:139
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   7. yii\base\Component->trigger() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:607
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   8. call_user_func:{D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541}() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP   9. common\behaviors\GlobalAccessBehavior->beforeAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:541
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP  10. yii\base\Component->attachBehavior() D:\server\OpenServer\domains\today.dev\common\behaviors\GlobalAccessBehavior.php:58
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP  11. yii\base\Component->ensureBehaviors() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:590
+[27-Oct-2016 08:00:34 Europe/Moscow] PHP  12. backend\controllers\ArticleController->behaviors() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Component.php:646
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP Fatal error:  Class 'backend\models\Tag' not found in D:\server\OpenServer\domains\today.dev\backend\controllers\TagController.php on line 14
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP Stack trace:
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP   1. {main}() D:\server\OpenServer\domains\today.dev\backend\web\index.php:0
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP   2. yii\base\Application->run() D:\server\OpenServer\domains\today.dev\backend\web\index.php:23
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP   3. yii\web\Application->handleRequest() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Application.php:375
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP   4. yii\base\Module->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\web\Application.php:84
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP   5. yii\base\Controller->runAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Module.php:455
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP   6. yii\base\Controller->createAction() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:120
+[27-Oct-2016 08:08:06 Europe/Moscow] PHP   7. backend\controllers\TagController->actions() D:\server\OpenServer\domains\today.dev\vendor\yiisoft\yii2\base\Controller.php:217
